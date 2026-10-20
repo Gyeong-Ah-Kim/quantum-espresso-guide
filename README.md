@@ -11,7 +11,8 @@ Windows에서 WSL 2를 이용해 Ubuntu를 설치하고, Quantum ESPRESSO 컴파
 시작 메뉴에서 **PowerShell**을 검색한 후, 마우스 오른쪽 버튼을 눌러 **관리자 권한으로 실행**합니다.
 
 ```powershell
-wsl --install -d Ubuntu
+wsl --list --online
+wsl.exe --install Ubuntu-26.04
 ```
 
 Windows에서 Linux를 사용할 수 있도록 WSL과 Ubuntu를 설치합니다.
@@ -20,9 +21,6 @@ Windows에서 Linux를 사용할 수 있도록 WSL과 Ubuntu를 설치합니다.
 |---|---|
 | `wsl` | Windows의 Linux 환경 관리 |
 | `--install` | WSL 설치 |
-| `-d Ubuntu` | 설치할 Linux 배포판을 Ubuntu로 지정 |
-
-설치가 끝나면 **컴퓨터를 재시작**합니다.
 
 ## 2. Ubuntu 계정 생성
 
@@ -39,6 +37,8 @@ Retype new password: 비밀번호 재입력
 - Windows 계정과 별도로 사용하는 Ubuntu 계정입니다.
 - 비밀번호 입력 시 화면에 글자나 별표가 표시되지 않는 것은 정상입니다.
 - 이 비밀번호는 이후 관리자 권한으로 명령어를 실행할 때 사용합니다.
+
+설치가 끝나면 **컴퓨터를 재시작**합니다.
 
 ## 3. WSL 2 설치 확인
 
